@@ -1,12 +1,4 @@
-@use "sass:meta";
 @use "./base.scss";
-
-// Inline font @font-face declarations from Fontsource
-@include meta.load-css("../../node_modules/@fontsource-variable/fraunces/index.css");
-@include meta.load-css("../../node_modules/@fontsource/lato/400.css");
-@include meta.load-css("../../node_modules/@fontsource/lato/700.css");
-@include meta.load-css("../../node_modules/@fontsource/inconsolata/400.css");
-@include meta.load-css("../../node_modules/@fontsource/inconsolata/700.css");
 
 // Fluid type scale
 :root {
@@ -18,10 +10,10 @@
   --font-size-3xl: clamp(1.875rem, 1.5rem + 1.875vw, 2.625rem);
 }
 
-h1 { font-size: var(--font-size-3xl); }
-h2 { font-size: var(--font-size-2xl); }
-h3 { font-size: var(--font-size-xl); }
-h4 { font-size: var(--font-size-lg); }
+h1 { font-size: var(--font-size-3xl); font-weight: 700; }
+h2 { font-size: var(--font-size-2xl); font-weight: 600; }
+h3 { font-size: var(--font-size-xl); font-weight: 600; }
+h4 { font-size: var(--font-size-lg); font-weight: 600; }
 
 body {
   font-family: var(--bodyFont);

@@ -20,35 +20,34 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "local",
-      cdnCaching: false,
+      fontOrigin: "googleFonts",
       typography: {
-        header: "Fraunces Variable",
-        body: "Lato",
-        code: "Inconsolata",
+        header: "Inter",
+        body: "Inter",
+        code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf7f2",
-          lightgray: "#e8e2d9",
-          gray: "#9a9085",
-          darkgray: "#3d3530",
-          dark: "#1e1a18",
-          secondary: "#b06a2e",
-          tertiary: "#7a9e87",
-          highlight: "rgba(176, 106, 46, 0.08)",
-          textHighlight: "#fff3cd88",
+          light: "#eff1f5",        // Catppuccin Latte base
+          lightgray: "#ccd0da",    // Latte surface1
+          gray: "#8c8fa1",         // Latte overlay1
+          darkgray: "#4c4f69",     // Latte text
+          dark: "#4c4f69",         // Latte text
+          secondary: "#8839ef",    // Latte mauve
+          tertiary: "#04a5e5",     // Latte sky
+          highlight: "rgba(136, 57, 239, 0.08)",
+          textHighlight: "#df8e1d44", // Latte yellow tint
         },
         darkMode: {
-          light: "#1a1714",
-          lightgray: "#2e2925",
-          gray: "#7a7068",
-          darkgray: "#c4bdb5",
-          dark: "#f0ebe4",
-          secondary: "#d4884a",
-          tertiary: "#8fb89a",
-          highlight: "rgba(212, 136, 74, 0.10)",
-          textHighlight: "#8b5e3c44",
+          light: "#1e1e2e",        // Catppuccin Mocha base
+          lightgray: "#313244",    // Mocha surface1
+          gray: "#6c7086",         // Mocha overlay1
+          darkgray: "#a6adc8",     // Mocha subtext1
+          dark: "#cdd6f4",         // Mocha text
+          secondary: "#cba6f7",    // Mocha mauve
+          tertiary: "#89dceb",     // Mocha sky
+          highlight: "rgba(203, 166, 247, 0.10)",
+          textHighlight: "#f9e2af33", // Mocha yellow tint
         },
       },
     },
