@@ -1,13 +1,32 @@
 @use "./base.scss";
 
+// A4-style narrow centered layout
+.page > #quartz-body {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+// When there are no sidebars, the grid collapses — ensure center alignment
+.center {
+  max-width: 740px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 // Fluid type scale
 :root {
-  --font-size-sm: clamp(0.875rem, 0.85rem + 0.125vw, 0.9375rem);
-  --font-size-base: clamp(1rem, 0.975rem + 0.125vw, 1.0625rem);
-  --font-size-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.3125rem);
-  --font-size-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.625rem);
-  --font-size-2xl: clamp(1.5rem, 1.25rem + 1.25vw, 2.0625rem);
-  --font-size-3xl: clamp(1.875rem, 1.5rem + 1.875vw, 2.625rem);
+  --font-size-sm: clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);
+  --font-size-base: clamp(0.9375rem, 0.91rem + 0.14vw, 1rem);
+  --font-size-lg: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --font-size-xl: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+  --font-size-2xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  --font-size-3xl: clamp(1.5rem, 1.25rem + 1.25vw, 1.875rem);
+}
+
+body {
+  font-size: var(--font-size-base);
+  line-height: 1.65;
 }
 
 h1 { font-size: var(--font-size-3xl); font-weight: 700; }
@@ -15,7 +34,13 @@ h2 { font-size: var(--font-size-2xl); font-weight: 600; }
 h3 { font-size: var(--font-size-xl); font-weight: 600; }
 h4 { font-size: var(--font-size-lg); font-weight: 600; }
 
-body {
-  font-family: var(--bodyFont);
-  font-size: var(--font-size-base);
+// Header layout: title on left, controls on right
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--lightgray);
 }

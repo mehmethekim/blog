@@ -1,8 +1,11 @@
 ---
-title: Welcome
-growth-stage: seed
+title: Mehmet's Notes
 ---
 
-# Mehmet's Notes
+Hi, I'm **Mehmet Hekimoğlu** — an embedded software engineer.
 
-A digital garden on embedded systems and electrical engineering.
+I write about embedded systems, firmware, and the tools and protocols that make hardware work.
+
+→ [[posts/index|Posts]] — longer technical notes
+
+→ [[tags/embedded|embedded]] · [[tags/protocols|protocols]] · [[tags/rtos|rtos]]

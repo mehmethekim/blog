@@ -22,32 +22,32 @@ const config: QuartzConfig = {
     theme: {
       fontOrigin: "googleFonts",
       typography: {
-        header: "Inter",
-        body: "Inter",
-        code: "JetBrains Mono",
+        header: "Inconsolata",
+        body: "Inconsolata",
+        code: "Inconsolata",
       },
       colors: {
         lightMode: {
-          light: "#eff1f5",        // Catppuccin Latte base
-          lightgray: "#ccd0da",    // Latte surface1
-          gray: "#8c8fa1",         // Latte overlay1
-          darkgray: "#4c4f69",     // Latte text
-          dark: "#4c4f69",         // Latte text
-          secondary: "#8839ef",    // Latte mauve
-          tertiary: "#04a5e5",     // Latte sky
-          highlight: "rgba(136, 57, 239, 0.08)",
-          textHighlight: "#df8e1d44", // Latte yellow tint
+          light: "#d5d6db",        // TokyoNight Day bg
+          lightgray: "#b4b5b9",
+          gray: "#6172b0",
+          darkgray: "#3760bf",
+          dark: "#3760bf",
+          secondary: "#2e7de9",    // blue accent
+          tertiary: "#587539",     // green hover
+          highlight: "rgba(46,125,233,0.08)",
+          textHighlight: "#8c6c3e44",
         },
         darkMode: {
-          light: "#1e1e2e",        // Catppuccin Mocha base
-          lightgray: "#313244",    // Mocha surface1
-          gray: "#6c7086",         // Mocha overlay1
-          darkgray: "#a6adc8",     // Mocha subtext1
-          dark: "#cdd6f4",         // Mocha text
-          secondary: "#cba6f7",    // Mocha mauve
-          tertiary: "#89dceb",     // Mocha sky
-          highlight: "rgba(203, 166, 247, 0.10)",
-          textHighlight: "#f9e2af33", // Mocha yellow tint
+          light: "#1a1b2e",        // TokyoNight bg
+          lightgray: "#292e42",    // surface
+          gray: "#565f89",         // comment/muted
+          darkgray: "#a9b1d6",     // subtext
+          dark: "#c0caf5",         // main text
+          secondary: "#7aa2f7",    // blue links
+          tertiary: "#9ece6a",     // green hover
+          highlight: "rgba(122,162,247,0.10)",
+          textHighlight: "#e0af6844",
         },
       },
     },
