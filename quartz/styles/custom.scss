@@ -1,17 +1,21 @@
 @use "./base.scss";
 
-// A4-style narrow centered layout
-.page > #quartz-body {
-  max-width: 740px;
+// Collapse the 3-column grid to single-column since we have no sidebars
+#quartz-body {
+  grid-template-columns: auto !important;
+  grid-template-areas:
+    "grid-header"
+    "grid-center"
+    "grid-footer" !important;
+  max-width: 860px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 }
 
-// When there are no sidebars, the grid collapses — ensure center alignment
+// Center content with a readable line length
 .center {
-  max-width: 740px;
-  margin: 0 auto;
   width: 100%;
+  max-width: 100%;
 }
 
 // Fluid type scale
