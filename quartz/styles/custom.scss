@@ -1,21 +1,28 @@
 @use "./base.scss";
 
-// Collapse the 3-column grid to single-column since we have no sidebars
-#quartz-body {
+// Collapse the 3-column grid to single-column since we have no sidebars.
+// Use .page > #quartz-body to match base.scss specificity, plus !important.
+.page > #quartz-body {
   grid-template-columns: auto !important;
   grid-template-areas:
     "grid-header"
     "grid-center"
     "grid-footer" !important;
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  max-width: 860px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 2rem !important;
 }
 
-// Center content with a readable line length
 .center {
   width: 100%;
   max-width: 100%;
+}
+
+// Hide empty sidebar divs so they don't affect flow
+.sidebar.left,
+.sidebar.right {
+  display: none !important;
 }
 
 // Fluid type scale
